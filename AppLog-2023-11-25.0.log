@@ -1,0 +1,1183 @@
+2023-11-25 11:37:09 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 16496 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 11:37:09 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 11:37:09 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 11:37:09 [INFO] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-25 11:37:09 [INFO] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-25 11:37:11 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 11:37:11 [INFO] - Finished Spring Data repository scanning in 113 ms. Found 7 JPA repository interfaces.
+2023-11-25 11:37:12 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 11:37:12 [INFO] - Starting service [Tomcat]
+2023-11-25 11:37:12 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 11:37:12 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 11:37:12 [INFO] - Root WebApplicationContext: initialization completed in 2340 ms
+2023-11-25 11:37:12 [INFO] - HikariPool-1 - Starting...
+2023-11-25 11:37:12 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 11:37:13 [INFO] - HikariPool-1 - Start completed.
+2023-11-25 11:37:14 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 11:37:15 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 11:37:15 [INFO] - Inside the service
+2023-11-25 11:37:15 [INFO] - Inside Customer controller
+2023-11-25 11:37:15 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 11:37:15 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 11:37:16 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 11:37:16 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1926d222, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a844932, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a4f6e04, org.springframework.security.web.header.HeaderWriterFilter@4315941a, org.springframework.security.web.authentication.logout.LogoutFilter@213c8a49, com.cabapp.pro.jwt.JwtRequestFilter@201ec28e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26db8750, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62994eb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f3c23b3, org.springframework.security.web.session.SessionManagementFilter@1ed35829, org.springframework.security.web.access.ExceptionTranslationFilter@71bc6cc0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ee4816d]
+2023-11-25 11:37:16 [INFO] - LiveReload server is running on port 35729
+2023-11-25 11:37:16 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 11:37:16 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 11:37:16 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 11:37:16 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 11:37:16 [INFO] - Context refreshed
+2023-11-25 11:37:16 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 11:37:16 [INFO] - Scanning for api listing references
+2023-11-25 11:37:17 [INFO] - Started CabBookingApplication in 7.69 seconds (JVM running for 8.409)
+2023-11-25 11:37:30 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 11:37:30 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 11:37:30 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 11:37:30 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 11:37:30 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 11:37:30 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4eff02ca
+2023-11-25 11:37:30 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e8e8895
+2023-11-25 11:37:30 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 11:37:30 [INFO] - Completed initialization in 2 ms
+2023-11-25 11:37:30 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:30 [DEBUG] - OPTIONS "/jwt/authenticate", parameters={}
+2023-11-25 11:37:30 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 11:37:30 [DEBUG] - Completed 200 OK
+2023-11-25 11:37:30 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:30 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-25 11:37:30 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 11:37:30 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=sunil, password=654321, role=null, email=, token=, isValid=false, isUsername=fals (truncated)...]
+2023-11-25 11:37:30 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:30 [DEBUG] - Writing [LoginDto [username=sunil, password=654321, role=[driver], email=, token=eyJhbGciOiJIUzI1NiJ9.eyJzdWI (truncated)...]
+2023-11-25 11:37:30 [DEBUG] - Completed 200 OK
+2023-11-25 11:37:30 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:30 [DEBUG] - GET "/driver/driverDetails/sunil", parameters={}
+2023-11-25 11:37:30 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#fetchDriverDetails(String)
+2023-11-25 11:37:30 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:30 [DEBUG] - Writing [DriverBasicResponseDTO [username=Sathish, password=876543, mobileNumber=9898765467, address=no.3, st (truncated)...]
+2023-11-25 11:37:30 [DEBUG] - Completed 200 OK
+2023-11-25 11:37:32 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:32 [DEBUG] - GET "/driver/booking/sunil", parameters={}
+2023-11-25 11:37:32 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#getTripBookinginfo(String)
+2023-11-25 11:37:33 [DEBUG] - Using @ExceptionHandler com.cabapp.pro.controller.ControllerException#CabServiceException(DriverException)
+2023-11-25 11:37:33 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:33 [DEBUG] - Writing [ExceptionResponseDto [statusCode=404, message=didnt find any active trips]]
+2023-11-25 11:37:33 [WARN] - Resolved [DriverException [statusCode=404, message=didnt find any active trips]]
+2023-11-25 11:37:33 [DEBUG] - Completed 404 NOT_FOUND
+2023-11-25 11:37:35 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:35 [DEBUG] - GET "/driver/complaintOnDriver/1", parameters={}
+2023-11-25 11:37:35 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#complaintOnDriver(int)
+2023-11-25 11:37:35 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:35 [DEBUG] - Writing [[Complaint [complaintId=1, dateOnRegister=2023-11-24T09:25:38.849Z, comment=Not comfortable, status= (truncated)...]
+2023-11-25 11:37:35 [DEBUG] - Completed 200 OK
+2023-11-25 11:37:37 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:37 [DEBUG] - GET "/driver/booking/sunil", parameters={}
+2023-11-25 11:37:37 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#getTripBookinginfo(String)
+2023-11-25 11:37:37 [DEBUG] - Using @ExceptionHandler com.cabapp.pro.controller.ControllerException#CabServiceException(DriverException)
+2023-11-25 11:37:37 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:37 [DEBUG] - Writing [ExceptionResponseDto [statusCode=404, message=didnt find any active trips]]
+2023-11-25 11:37:37 [WARN] - Resolved [DriverException [statusCode=404, message=didnt find any active trips]]
+2023-11-25 11:37:37 [DEBUG] - Completed 404 NOT_FOUND
+2023-11-25 11:37:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 11:37:44 [DEBUG] - GET "/driver/driverDetails/sunil", parameters={}
+2023-11-25 11:37:44 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#fetchDriverDetails(String)
+2023-11-25 11:37:44 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 11:37:44 [DEBUG] - Writing [DriverBasicResponseDTO [username=Sathish, password=876543, mobileNumber=9898765467, address=no.3, st (truncated)...]
+2023-11-25 11:37:44 [DEBUG] - Completed 200 OK
+2023-11-25 14:38:32 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 14:38:32 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 14:38:32 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 14:38:32 [INFO] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-25 14:38:32 [INFO] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-25 14:38:33 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 14:38:33 [INFO] - Finished Spring Data repository scanning in 137 ms. Found 7 JPA repository interfaces.
+2023-11-25 14:38:35 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 14:38:35 [INFO] - Starting service [Tomcat]
+2023-11-25 14:38:35 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 14:38:35 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 14:38:35 [INFO] - Root WebApplicationContext: initialization completed in 3050 ms
+2023-11-25 14:38:36 [INFO] - HikariPool-1 - Starting...
+2023-11-25 14:38:36 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 14:38:36 [INFO] - HikariPool-1 - Start completed.
+2023-11-25 14:38:38 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 14:38:39 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 14:38:39 [INFO] - Inside the service
+2023-11-25 14:38:39 [INFO] - Inside Customer controller
+2023-11-25 14:38:39 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 14:38:40 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 14:38:40 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 14:38:40 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@59af2157, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12cf224d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5667d31a, org.springframework.security.web.header.HeaderWriterFilter@30853049, org.springframework.security.web.authentication.logout.LogoutFilter@441081f1, com.cabapp.pro.jwt.JwtRequestFilter@657c67e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dbbc63f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@480f0071, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42ef0686, org.springframework.security.web.session.SessionManagementFilter@78e41c73, org.springframework.security.web.access.ExceptionTranslationFilter@7bc1283d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a5e1928]
+2023-11-25 14:38:40 [INFO] - LiveReload server is running on port 35729
+2023-11-25 14:38:40 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 14:38:40 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 14:38:40 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 14:38:41 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 14:38:41 [INFO] - Context refreshed
+2023-11-25 14:38:41 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 14:38:41 [INFO] - Scanning for api listing references
+2023-11-25 14:38:41 [INFO] - Started CabBookingApplication in 10.064 seconds (JVM running for 10.908)
+2023-11-25 14:39:10 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 14:39:10 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 14:39:10 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 14:39:10 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 14:39:10 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 14:39:10 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70f64f20
+2023-11-25 14:39:10 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@a2fd79d
+2023-11-25 14:39:10 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 14:39:10 [INFO] - Completed initialization in 3 ms
+2023-11-25 14:39:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:39:10 [DEBUG] - OPTIONS "/customer/register/customer", parameters={}
+2023-11-25 14:39:10 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveCustomer(CustomerRequestSubmitDTO)
+2023-11-25 14:39:10 [DEBUG] - Completed 200 OK
+2023-11-25 14:39:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:39:10 [DEBUG] - POST "/customer/register/customer", parameters={}
+2023-11-25 14:39:10 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveCustomer(CustomerRequestSubmitDTO)
+2023-11-25 14:39:10 [DEBUG] - Read "application/json;charset=UTF-8" to [CustomerRequestSubmitDTO [username=sathya, password=sathya@31, address=No.5,tnagar-Coimbatore, mobil (truncated)...]
+2023-11-25 14:39:10 [DEBUG] - Inside saveCustomer method
+2023-11-25 14:39:10 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:39:10 [DEBUG] - Writing [CustomerResponseDTO [username=sathya, password=sathya@31, address=No.5,tnagar-Coimbatore, mobileNumb (truncated)...]
+2023-11-25 14:39:10 [DEBUG] - Completed 201 CREATED
+2023-11-25 14:41:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:41:45 [DEBUG] - OPTIONS "/driver/register", parameters={}
+2023-11-25 14:41:45 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-25 14:41:45 [DEBUG] - Completed 200 OK
+2023-11-25 14:41:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:41:45 [DEBUG] - POST "/driver/register", parameters={}
+2023-11-25 14:41:45 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-25 14:41:45 [DEBUG] - Read "application/json;charset=UTF-8" to [DriverRequestSubmitDTO [username=Surya, password=Surya@51, address=No.5-fdf-coimbatore, mobileNumber (truncated)...]
+2023-11-25 14:41:45 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:41:45 [DEBUG] - Writing [DriverBasicResponseDTO [username=Surya, password=Surya@51, mobileNumber=7464546474, address=No.5-fdf (truncated)...]
+2023-11-25 14:41:45 [DEBUG] - Completed 200 OK
+2023-11-25 14:42:20 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:42:20 [DEBUG] - OPTIONS "/jwt/authenticate", parameters={}
+2023-11-25 14:42:20 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 14:42:20 [DEBUG] - Completed 200 OK
+2023-11-25 14:42:20 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:42:20 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-25 14:42:20 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 14:42:20 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=suresh, password=23456er, role=null, email=, token=, isValid=false, isUsername=fa (truncated)...]
+2023-11-25 14:42:21 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:42:21 [DEBUG] - Writing [LoginDto [username=suresh, password=23456er, role=[admin], email=, token=eyJhbGciOiJIUzI1NiJ9.eyJzdW (truncated)...]
+2023-11-25 14:42:21 [DEBUG] - Completed 200 OK
+2023-11-25 14:43:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:43:02 [DEBUG] - OPTIONS "/admin/insert/cab", parameters={}
+2023-11-25 14:43:02 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-25 14:43:02 [DEBUG] - Completed 200 OK
+2023-11-25 14:43:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:43:02 [DEBUG] - POST "/admin/insert/cab", parameters={}
+2023-11-25 14:43:02 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-25 14:43:02 [DEBUG] - Read "application/json;charset=UTF-8" to [CabRequestDTO [cabId=0, carType=Mahendra, perKmRate=14.0, currentLocation=Coimbatore, cabRegistratio (truncated)...]
+2023-11-25 14:43:02 [INFO] - recieved request to save cab 
+2023-11-25 14:43:02 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:43:02 [DEBUG] - Writing [CabResponseDTO [cabId=7, carType=Mahendra, perKmRate=14.0, status=unassigned, currentLocation=Coimba (truncated)...]
+2023-11-25 14:43:02 [DEBUG] - Completed 200 OK
+2023-11-25 14:43:16 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:43:16 [DEBUG] - GET "/admin/newreq/dr/Pending", parameters={}
+2023-11-25 14:43:16 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 14:43:16 [INFO] - recieved request for registration  
+2023-11-25 14:43:17 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:43:17 [DEBUG] - Writing [[DriverBasicResponseDTO [username=Surya, password=Surya@51, mobileNumber=7464546474, address=No.5-fd (truncated)...]
+2023-11-25 14:43:17 [DEBUG] - Completed 200 OK
+2023-11-25 14:43:24 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:43:24 [DEBUG] - OPTIONS "/admin/update/status/3", parameters={}
+2023-11-25 14:43:24 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-25 14:43:24 [DEBUG] - Completed 200 OK
+2023-11-25 14:43:24 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:43:24 [DEBUG] - PUT "/admin/update/status/3", parameters={}
+2023-11-25 14:43:24 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-25 14:43:24 [INFO] - recieved request to update registration 
+2023-11-25 14:43:24 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:43:24 [DEBUG] - Writing [DriverResponseDTO [username=Surya, password=Surya@51, mobileNumber=7464546474, address=No.5-fdf-coim (truncated)...]
+2023-11-25 14:43:24 [DEBUG] - Completed 200 OK
+2023-11-25 14:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:44:10 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-25 14:44:10 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 14:44:10 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=sathya, password=sathya@31, role=null, email=, token=, isValid=false, isUsername= (truncated)...]
+2023-11-25 14:44:10 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:44:10 [DEBUG] - Writing [LoginDto [username=sathya, password=sathya@31, role=[customer], email=, token=eyJhbGciOiJIUzI1NiJ9.e (truncated)...]
+2023-11-25 14:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 14:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:44:10 [DEBUG] - GET "/customer/customerbyName/sathya", parameters={}
+2023-11-25 14:44:10 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCustomerByName(String)
+2023-11-25 14:44:10 [DEBUG] - Inside getCustomerByName method
+2023-11-25 14:44:10 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:44:10 [DEBUG] - Writing [CustomerResponseDTO [username=sathya, password=sathya@31, address=No.5,tnagar-Coimbatore, mobileNumb (truncated)...]
+2023-11-25 14:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 14:44:40 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:44:40 [DEBUG] - OPTIONS "/customer/trip/", parameters={}
+2023-11-25 14:44:40 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#addTrip(TripBookingRequestSubmitDTO)
+2023-11-25 14:44:40 [DEBUG] - Completed 200 OK
+2023-11-25 14:44:40 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:44:40 [DEBUG] - POST "/customer/trip/", parameters={}
+2023-11-25 14:44:40 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#addTrip(TripBookingRequestSubmitDTO)
+2023-11-25 14:44:40 [DEBUG] - Read "application/json;charset=UTF-8" to [TripBookingRequestSubmitDTO [customerId=4, fromLocation=Coimbatore, toLocation=Chennai, fromDateTime (truncated)...]
+2023-11-25 14:44:40 [DEBUG] - Inside addTrip method
+2023-11-25 14:44:40 [DEBUG] - inside service 1. : TripBooking [tripBookingId=0, customerId=4, fromLocation=Coimbatore, toLocation=Chennai, fromDateTime=2023-11-25T14:44:40.830082700, toDateTime=null, status=false, distanceInKm=0.0, bill=0.0, isRatingDone=false, driver=null, customer=null]
+2023-11-25 14:44:40 [DEBUG] - inside service 2. customer : Customer [customerId=4, tripBookings=[]]
+2023-11-25 14:44:40 [DEBUG] - inside service 3. fromLocation: Coimbatore
+2023-11-25 14:44:40 [DEBUG] - inside service 5. statusBooking : []
+2023-11-25 14:44:40 [DEBUG] - Inserting new trip booking...
+2023-11-25 14:44:40 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:44:40 [DEBUG] - Writing [TripBookingResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation=Chennai,  (truncated)...]
+2023-11-25 14:44:40 [DEBUG] - Completed 200 OK
+2023-11-25 14:44:57 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:44:57 [DEBUG] - GET "/customer/tripDetails/4", parameters={}
+2023-11-25 14:44:57 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCurrentTripByUserId(int)
+2023-11-25 14:44:57 [DEBUG] - Inside getCurrentTripByUserId method for user ID: 4
+2023-11-25 14:44:57 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:44:57 [DEBUG] - Writing [TripBookingResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation=Chennai,  (truncated)...]
+2023-11-25 14:44:57 [DEBUG] - Completed 200 OK
+2023-11-25 14:46:28 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:46:28 [DEBUG] - GET "/customer/customerbyName/sathya", parameters={}
+2023-11-25 14:46:28 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCustomerByName(String)
+2023-11-25 14:46:28 [DEBUG] - Inside getCustomerByName method
+2023-11-25 14:46:28 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:46:28 [DEBUG] - Writing [CustomerResponseDTO [username=sathya, password=sathya@31, address=No.5,tnagar-Coimbatore, mobileNumb (truncated)...]
+2023-11-25 14:46:28 [DEBUG] - Completed 200 OK
+2023-11-25 14:46:30 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:46:30 [DEBUG] - GET "/customer/tripDetails/4", parameters={}
+2023-11-25 14:46:30 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCurrentTripByUserId(int)
+2023-11-25 14:46:30 [DEBUG] - Inside getCurrentTripByUserId method for user ID: 4
+2023-11-25 14:46:30 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:46:30 [DEBUG] - Writing [TripBookingResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation=Chennai,  (truncated)...]
+2023-11-25 14:46:30 [DEBUG] - Completed 200 OK
+2023-11-25 14:46:37 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:46:37 [DEBUG] - GET "/customer/allTrips/sathya", parameters={}
+2023-11-25 14:46:37 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getAllTripBooking(String)
+2023-11-25 14:46:37 [DEBUG] - Inside getAllTripBooking method for customer ID: sathya
+2023-11-25 14:46:37 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:46:37 [DEBUG] - Writing [[TripBookingEndTripCustomerResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLo (truncated)...]
+2023-11-25 14:46:37 [DEBUG] - Completed 200 OK
+2023-11-25 14:46:42 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:46:42 [DEBUG] - GET "/customer/complaintByCustomer/4", parameters={}
+2023-11-25 14:46:42 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#findComplaintsByUser(int)
+2023-11-25 14:46:42 [DEBUG] - Inside find complaint by user method
+2023-11-25 14:46:42 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:46:42 [DEBUG] - Writing [ComplaintException [statusCode=404, message=complaints not found for user]]
+2023-11-25 14:46:42 [DEBUG] - Completed 500 INTERNAL_SERVER_ERROR
+2023-11-25 14:46:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:46:43 [DEBUG] - GET "/customer/complaintByCustomer/4", parameters={}
+2023-11-25 14:46:43 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#findComplaintsByUser(int)
+2023-11-25 14:46:43 [DEBUG] - Inside find complaint by user method
+2023-11-25 14:46:43 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:46:43 [DEBUG] - Writing [ComplaintException [statusCode=404, message=complaints not found for user]]
+2023-11-25 14:46:43 [DEBUG] - Completed 500 INTERNAL_SERVER_ERROR
+2023-11-25 14:47:27 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:47:27 [DEBUG] - OPTIONS "/customer/complaint/save", parameters={}
+2023-11-25 14:47:27 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveComplaint(Complaint)
+2023-11-25 14:47:27 [DEBUG] - Completed 200 OK
+2023-11-25 14:47:27 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:47:27 [DEBUG] - POST "/customer/complaint/save", parameters={}
+2023-11-25 14:47:27 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveComplaint(Complaint)
+2023-11-25 14:47:27 [DEBUG] - Read "application/json;charset=UTF-8" to [Complaint [complaintId=0, dateOnRegister=null, comment=not nice , status=, email=sathya@gmail.com, c (truncated)...]
+2023-11-25 14:47:27 [DEBUG] - Inside save complaint method
+2023-11-25 14:47:32 [INFO] - Mail Sent Successfully...
+2023-11-25 14:47:32 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:47:32 [DEBUG] - Writing ["Successfully Created Complaint with the id : 3"]
+2023-11-25 14:47:32 [DEBUG] - Completed 201 CREATED
+2023-11-25 14:49:11 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:49:11 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-25 14:49:11 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 14:49:11 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=Surya, password=Surya@51, role=null, email=, token=, isValid=false, isUsername=fa (truncated)...]
+2023-11-25 14:49:11 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:49:11 [DEBUG] - Writing [LoginDto [username=Surya, password=Surya@51, role=[driver], email=, token=eyJhbGciOiJIUzI1NiJ9.eyJzd (truncated)...]
+2023-11-25 14:49:11 [DEBUG] - Completed 200 OK
+2023-11-25 14:49:11 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:49:11 [DEBUG] - GET "/driver/driverDetails/Surya", parameters={}
+2023-11-25 14:49:11 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#fetchDriverDetails(String)
+2023-11-25 14:49:11 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:49:11 [DEBUG] - Writing [DriverBasicResponseDTO [username=Sathish, password=876543, mobileNumber=9898765467, address=no.3, st (truncated)...]
+2023-11-25 14:49:11 [DEBUG] - Completed 200 OK
+2023-11-25 14:49:14 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:49:14 [DEBUG] - GET "/driver/booking/Surya", parameters={}
+2023-11-25 14:49:14 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#getTripBookinginfo(String)
+2023-11-25 14:49:14 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:49:14 [DEBUG] - Writing [TripBookingResponseByBookingDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation= (truncated)...]
+2023-11-25 14:49:14 [DEBUG] - Completed 200 OK
+2023-11-25 14:51:31 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:51:31 [DEBUG] - GET "/driver/driverDetails/Surya", parameters={}
+2023-11-25 14:51:31 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#fetchDriverDetails(String)
+2023-11-25 14:51:32 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:51:32 [DEBUG] - Writing [DriverBasicResponseDTO [username=Sathish, password=876543, mobileNumber=9898765467, address=no.3, st (truncated)...]
+2023-11-25 14:51:32 [DEBUG] - Completed 200 OK
+2023-11-25 14:51:34 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:51:34 [DEBUG] - GET "/driver/booking/Surya", parameters={}
+2023-11-25 14:51:34 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#getTripBookinginfo(String)
+2023-11-25 14:51:34 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:51:34 [DEBUG] - Writing [TripBookingResponseByBookingDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation= (truncated)...]
+2023-11-25 14:51:34 [DEBUG] - Completed 200 OK
+2023-11-25 14:51:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:51:43 [DEBUG] - OPTIONS "/driver/endTrip/8", parameters={}
+2023-11-25 14:51:43 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#endTrip(int)
+2023-11-25 14:51:43 [DEBUG] - Completed 200 OK
+2023-11-25 14:51:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 14:51:43 [DEBUG] - PUT "/driver/endTrip/8", parameters={}
+2023-11-25 14:51:43 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#endTrip(int)
+2023-11-25 14:51:43 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 14:51:43 [DEBUG] - Writing [TripBookingEndResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLocation=Chenna (truncated)...]
+2023-11-25 14:51:43 [DEBUG] - Completed 200 OK
+2023-11-25 16:16:51 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:16:51 [DEBUG] - OPTIONS "/driver/register", parameters={}
+2023-11-25 16:16:51 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-25 16:16:51 [DEBUG] - Completed 200 OK
+2023-11-25 16:16:51 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:16:51 [DEBUG] - POST "/driver/register", parameters={}
+2023-11-25 16:16:51 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-25 16:16:51 [DEBUG] - Read "application/json;charset=UTF-8" to [DriverRequestSubmitDTO [username=Ram, password=Ram@61, address=No.54,Tnagar-Mysore, mobileNumber=657 (truncated)...]
+2023-11-25 16:16:51 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:16:51 [DEBUG] - Writing [DriverBasicResponseDTO [username=Ram, password=Ram@61, mobileNumber=6577489657, address=No.54,Tnagar (truncated)...]
+2023-11-25 16:16:51 [DEBUG] - Completed 200 OK
+2023-11-25 16:17:28 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:17:28 [DEBUG] - OPTIONS "/jwt/authenticate", parameters={}
+2023-11-25 16:17:28 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 16:17:28 [DEBUG] - Completed 200 OK
+2023-11-25 16:17:28 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:17:28 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-25 16:17:28 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-25 16:17:28 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=suresh, password=23456er, role=null, email=, token=, isValid=false, isUsername=fa (truncated)...]
+2023-11-25 16:17:28 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:17:28 [DEBUG] - Writing [LoginDto [username=suresh, password=23456er, role=[admin], email=, token=eyJhbGciOiJIUzI1NiJ9.eyJzdW (truncated)...]
+2023-11-25 16:17:28 [DEBUG] - Completed 200 OK
+2023-11-25 16:17:33 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:17:33 [DEBUG] - GET "/admin/newreq/dr/Pending", parameters={}
+2023-11-25 16:17:33 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 16:17:33 [INFO] - recieved request for registration  
+2023-11-25 16:17:33 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:17:33 [DEBUG] - Writing [[DriverBasicResponseDTO [username=Ram, password=Ram@61, mobileNumber=6577489657, address=No.54,Tnaga (truncated)...]
+2023-11-25 16:17:33 [DEBUG] - Completed 200 OK
+2023-11-25 16:17:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:17:43 [DEBUG] - GET "/admin/allcabs", parameters={}
+2023-11-25 16:17:43 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getAllCabs()
+2023-11-25 16:17:43 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:17:43 [DEBUG] - Writing [[CabResponseDTO [cabId=1, carType=Mahendra, perKmRate=16.7, status=assigned, currentLocation=Bangalo (truncated)...]
+2023-11-25 16:17:43 [DEBUG] - Completed 200 OK
+2023-11-25 16:18:50 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:18:50 [DEBUG] - OPTIONS "/admin/insert/cab", parameters={}
+2023-11-25 16:18:50 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-25 16:18:50 [DEBUG] - Completed 200 OK
+2023-11-25 16:18:50 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:18:50 [DEBUG] - POST "/admin/insert/cab", parameters={}
+2023-11-25 16:18:50 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-25 16:18:50 [DEBUG] - Read "application/json;charset=UTF-8" to [CabRequestDTO [cabId=0, carType=Mahendra, perKmRate=16.0, currentLocation=Mysore, cabRegistrationNum (truncated)...]
+2023-11-25 16:18:50 [INFO] - recieved request to save cab 
+2023-11-25 16:18:50 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:18:50 [DEBUG] - Writing [CabResponseDTO [cabId=9, carType=Mahendra, perKmRate=16.0, status=unassigned, currentLocation=Mysore (truncated)...]
+2023-11-25 16:18:50 [DEBUG] - Completed 200 OK
+2023-11-25 16:18:52 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:18:52 [DEBUG] - GET "/admin/allcabs", parameters={}
+2023-11-25 16:18:52 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getAllCabs()
+2023-11-25 16:18:52 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:18:52 [DEBUG] - Writing [[CabResponseDTO [cabId=1, carType=Mahendra, perKmRate=16.7, status=assigned, currentLocation=Bangalo (truncated)...]
+2023-11-25 16:18:52 [DEBUG] - Completed 200 OK
+2023-11-25 16:18:56 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:18:56 [DEBUG] - GET "/admin/newreq/dr/Pending", parameters={}
+2023-11-25 16:18:56 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 16:18:56 [INFO] - recieved request for registration  
+2023-11-25 16:18:56 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:18:56 [DEBUG] - Writing [[DriverBasicResponseDTO [username=Ram, password=Ram@61, mobileNumber=6577489657, address=No.54,Tnaga (truncated)...]
+2023-11-25 16:18:56 [DEBUG] - Completed 200 OK
+2023-11-25 16:19:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:19:02 [DEBUG] - OPTIONS "/admin/update/status/4", parameters={}
+2023-11-25 16:19:02 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-25 16:19:02 [DEBUG] - Completed 200 OK
+2023-11-25 16:19:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 16:19:02 [DEBUG] - PUT "/admin/update/status/4", parameters={}
+2023-11-25 16:19:02 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-25 16:19:02 [INFO] - recieved request to update registration 
+2023-11-25 16:19:02 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 16:19:02 [DEBUG] - Writing [DriverResponseDTO [username=Ram, password=Ram@61, mobileNumber=6577489657, address=No.54,Tnagar-Myso (truncated)...]
+2023-11-25 16:19:02 [DEBUG] - Completed 200 OK
+2023-11-25 17:28:56 [WARN] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=43m19s13ms227µs900ns).
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:43 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 20:33:43 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 20:33:43 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 20:33:43 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 20:33:43 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@6ffd417d]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 20:33:43 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 20:33:43 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 20:33:43 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@3c88dfd9]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 20:33:43 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 20:33:43 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 20:33:43 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@20b4f71]]
+2023-11-25 20:33:43 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:43 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 20:33:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 20:33:44 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@47df93f0]
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:33:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 20:33:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2023-11-25 20:33:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 20:33:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 20:33:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:33:44 [DEBUG] - Completed 200 OK
+2023-11-25 20:34:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:34:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2023-11-25 20:34:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:34:10 [DEBUG] - Completed 200 OK
+2023-11-25 20:34:15 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:34:15 [DEBUG] - GET "/admin/allcustomers", parameters={}
+2023-11-25 20:34:15 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getAllCustomers()
+2023-11-25 20:34:15 [DEBUG] - Inside getAllCustomers method
+2023-11-25 20:34:15 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 20:34:15 [DEBUG] - Writing [[CustomerResponseDTO [username=Ramesh, password=987654, address=No.2-tirupandram-chennai, mobileNumb (truncated)...]
+2023-11-25 20:34:15 [DEBUG] - Completed 200 OK
+2023-11-25 20:34:15 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 20:34:15 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-600.woff2", parameters={}
+2023-11-25 20:34:15 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 20:34:15 [DEBUG] - Completed 200 OK
+2023-11-25 22:10:37 [WARN] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h36m7s750ms847µs500ns).
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 22:12:29 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 22:12:29 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:29 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@1ca54e29]
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 22:12:29 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 22:12:29 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:29 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@19545734]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 22:12:29 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 22:12:29 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:29 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@74582b80]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:29 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@a546c87]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 22:12:29 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:29 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:35 [INFO] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-25 22:12:35 [INFO] - Stopping service [Tomcat]
+2023-11-25 22:12:35 [INFO] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-25 22:12:35 [WARN] - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-11-25 22:12:35 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:12:35 [INFO] - HikariPool-1 - Shutdown initiated...
+2023-11-25 22:12:35 [INFO] - HikariPool-1 - Shutdown completed.
+2023-11-25 22:12:35 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 22:12:35 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 22:12:35 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 22:12:35 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 22:12:35 [INFO] - Finished Spring Data repository scanning in 62 ms. Found 7 JPA repository interfaces.
+2023-11-25 22:12:36 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 22:12:36 [INFO] - Starting service [Tomcat]
+2023-11-25 22:12:36 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 22:12:36 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 22:12:36 [INFO] - Root WebApplicationContext: initialization completed in 755 ms
+2023-11-25 22:12:36 [INFO] - HikariPool-2 - Starting...
+2023-11-25 22:12:36 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 22:12:36 [INFO] - HikariPool-2 - Start completed.
+2023-11-25 22:12:36 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:12:36 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 22:12:36 [INFO] - Inside the service
+2023-11-25 22:12:36 [INFO] - Inside Customer controller
+2023-11-25 22:12:36 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 22:12:37 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 22:12:37 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 22:12:37 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6a582d58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d01905a, org.springframework.security.web.context.SecurityContextPersistenceFilter@48ae7fcf, org.springframework.security.web.header.HeaderWriterFilter@3fc8baa2, org.springframework.security.web.authentication.logout.LogoutFilter@346cac0f, com.cabapp.pro.jwt.JwtRequestFilter@4e2d1b52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56e064dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c07d909, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c6d278, org.springframework.security.web.session.SessionManagementFilter@51ce5dab, org.springframework.security.web.access.ExceptionTranslationFilter@d026a45, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bfee6cf]
+2023-11-25 22:12:37 [INFO] - LiveReload server is running on port 35729
+2023-11-25 22:12:37 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 22:12:37 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 22:12:37 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 22:12:37 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 22:12:37 [INFO] - Context refreshed
+2023-11-25 22:12:37 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 22:12:37 [INFO] - Scanning for api listing references
+2023-11-25 22:12:37 [INFO] - Started CabBookingApplication in 2.108 seconds (JVM running for 27246.68)
+2023-11-25 22:12:37 [INFO] - Condition evaluation unchanged
+2023-11-25 22:12:44 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 22:12:44 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 22:12:44 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 22:12:44 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 22:12:44 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 22:12:44 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5b8dc723
+2023-11-25 22:12:44 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3f88c691
+2023-11-25 22:12:44 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 22:12:44 [INFO] - Completed initialization in 2 ms
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 22:12:44 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:44 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:44 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:44 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:44 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:44 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:44 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:44 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 22:12:45 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2023-11-25 22:12:45 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:45 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:45 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@439986b3]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 22:12:45 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 22:12:45 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:45 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@14d26337]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 22:12:45 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 22:12:45 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:45 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@7cf77ab2]]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 22:12:45 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:45 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@6935f0c5]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:45 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 22:12:45 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 22:12:45 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 22:12:45 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:45 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:45 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:45 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:47 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:47 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2023-11-25 22:12:47 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:47 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:47 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:47 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2023-11-25 22:12:47 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:47 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:59 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:59 [DEBUG] - GET "/admin/alltrips/1", parameters={}
+2023-11-25 22:12:59 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getAllTripBookings(int)
+2023-11-25 22:12:59 [INFO] - recieved request to get all trip booking for customer id 
+2023-11-25 22:12:59 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:12:59 [DEBUG] - Writing [[TripBookingResponseDTO [tripBookingId=3, customerId=1, fromLocation=Mysore, toLocation=Chennai, fro (truncated)...]
+2023-11-25 22:12:59 [DEBUG] - Completed 200 OK
+2023-11-25 22:12:59 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:12:59 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-600.woff2", parameters={}
+2023-11-25 22:12:59 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:12:59 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:43 [INFO] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-25 22:15:43 [INFO] - Stopping service [Tomcat]
+2023-11-25 22:15:43 [INFO] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-25 22:15:43 [WARN] - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-11-25 22:15:43 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:15:43 [INFO] - HikariPool-2 - Shutdown initiated...
+2023-11-25 22:15:43 [INFO] - HikariPool-2 - Shutdown completed.
+2023-11-25 22:15:43 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 22:15:43 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 22:15:43 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 22:15:44 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 22:15:44 [INFO] - Finished Spring Data repository scanning in 66 ms. Found 7 JPA repository interfaces.
+2023-11-25 22:15:44 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 22:15:44 [INFO] - Starting service [Tomcat]
+2023-11-25 22:15:44 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 22:15:44 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 22:15:44 [INFO] - Root WebApplicationContext: initialization completed in 645 ms
+2023-11-25 22:15:44 [INFO] - HikariPool-3 - Starting...
+2023-11-25 22:15:44 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 22:15:44 [INFO] - HikariPool-3 - Start completed.
+2023-11-25 22:15:44 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:15:44 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 22:15:45 [INFO] - Inside the service
+2023-11-25 22:15:45 [INFO] - Inside Customer controller
+2023-11-25 22:15:45 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 22:15:45 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 22:15:45 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 22:15:45 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d57bd9f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a98d3e1, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d375c61, org.springframework.security.web.header.HeaderWriterFilter@104b82ac, org.springframework.security.web.authentication.logout.LogoutFilter@ef41c01, com.cabapp.pro.jwt.JwtRequestFilter@75c8ba0d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d4bab50, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@415906b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@bada1c5, org.springframework.security.web.session.SessionManagementFilter@573fe129, org.springframework.security.web.access.ExceptionTranslationFilter@23ee7857, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67e88984]
+2023-11-25 22:15:45 [INFO] - LiveReload server is running on port 35729
+2023-11-25 22:15:45 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 22:15:45 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 22:15:45 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 22:15:45 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 22:15:45 [INFO] - Context refreshed
+2023-11-25 22:15:45 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 22:15:45 [INFO] - Scanning for api listing references
+2023-11-25 22:15:45 [INFO] - Started CabBookingApplication in 1.57 seconds (JVM running for 27434.714)
+2023-11-25 22:15:45 [INFO] - Condition evaluation unchanged
+2023-11-25 22:15:53 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 22:15:53 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 22:15:53 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 22:15:53 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 22:15:53 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 22:15:53 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2a9fb611
+2023-11-25 22:15:53 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6226b673
+2023-11-25 22:15:53 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 22:15:53 [INFO] - Completed initialization in 3 ms
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 22:15:53 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@249100b3]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 22:15:53 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 22:15:53 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:15:53 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@118046ae]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 22:15:53 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 22:15:53 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:15:53 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@794dd0a7]]
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 22:15:53 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:53 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:53 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:54 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:15:54 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@774d4cc1]
+2023-11-25 22:15:54 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:54 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 22:15:54 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 22:15:54 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 22:15:54 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:54 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:54 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:54 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:54 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:54 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:58 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:58 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2023-11-25 22:15:58 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:58 [DEBUG] - Completed 200 OK
+2023-11-25 22:15:58 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:15:58 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2023-11-25 22:15:58 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:15:58 [DEBUG] - Completed 200 OK
+2023-11-25 22:16:16 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:16:16 [DEBUG] - GET "/admin/alltrips/1", parameters={}
+2023-11-25 22:16:16 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getAllTripBookings(int)
+2023-11-25 22:16:16 [INFO] - recieved request to get all trip booking for customer id 
+2023-11-25 22:16:16 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:16:16 [DEBUG] - Writing [[TripBookingResponseDTO [tripBookingId=3, customerId=1, fromLocation=Mysore, toLocation=Chennai, fro (truncated)...]
+2023-11-25 22:16:16 [DEBUG] - Completed 200 OK
+2023-11-25 22:16:17 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:16:17 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-600.woff2", parameters={}
+2023-11-25 22:16:17 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:16:17 [DEBUG] - Completed 200 OK
+2023-11-25 22:20:26 [INFO] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-25 22:20:26 [INFO] - Stopping service [Tomcat]
+2023-11-25 22:20:26 [INFO] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-25 22:20:26 [WARN] - The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-11-25 22:20:26 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:20:26 [INFO] - HikariPool-3 - Shutdown initiated...
+2023-11-25 22:20:26 [INFO] - HikariPool-3 - Shutdown completed.
+2023-11-25 22:20:26 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 22:20:26 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 22:20:26 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 22:20:26 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 22:20:26 [INFO] - Finished Spring Data repository scanning in 51 ms. Found 7 JPA repository interfaces.
+2023-11-25 22:20:26 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 22:20:26 [INFO] - Starting service [Tomcat]
+2023-11-25 22:20:26 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 22:20:26 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 22:20:26 [INFO] - Root WebApplicationContext: initialization completed in 548 ms
+2023-11-25 22:20:26 [INFO] - HikariPool-4 - Starting...
+2023-11-25 22:20:26 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 22:20:26 [INFO] - HikariPool-4 - Start completed.
+2023-11-25 22:20:27 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:20:27 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 22:20:27 [INFO] - Inside the service
+2023-11-25 22:20:27 [INFO] - Inside Customer controller
+2023-11-25 22:20:27 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 22:20:27 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 22:20:27 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 22:20:27 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47f0b249, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49d309e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@5eb0d4e1, org.springframework.security.web.header.HeaderWriterFilter@690f098e, org.springframework.security.web.authentication.logout.LogoutFilter@72cf4516, com.cabapp.pro.jwt.JwtRequestFilter@11c312ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d8530cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c571d8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e94ca10, org.springframework.security.web.session.SessionManagementFilter@22849aa9, org.springframework.security.web.access.ExceptionTranslationFilter@2dc3153, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@488fd585]
+2023-11-25 22:20:27 [INFO] - LiveReload server is running on port 35729
+2023-11-25 22:20:27 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 22:20:27 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 22:20:27 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 22:20:27 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 22:20:27 [INFO] - Context refreshed
+2023-11-25 22:20:27 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 22:20:27 [INFO] - Scanning for api listing references
+2023-11-25 22:20:27 [INFO] - Started CabBookingApplication in 1.462 seconds (JVM running for 27716.956)
+2023-11-25 22:20:27 [INFO] - Condition evaluation unchanged
+2023-11-25 22:21:01 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 22:21:01 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 22:21:01 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 22:21:01 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 22:21:01 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 22:21:01 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2411cc53
+2023-11-25 22:21:01 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6cdb2073
+2023-11-25 22:21:01 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 22:21:01 [INFO] - Completed initialization in 3 ms
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 22:21:01 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@2d568e52]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 22:21:01 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 22:21:01 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:21:01 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@287ecc86]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 22:21:01 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 22:21:01 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:21:01 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@4fc5675e]]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 22:21:01 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:01 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:21:01 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@51b6ee45]
+2023-11-25 22:21:01 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:02 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:02 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 22:21:02 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 22:21:02 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2023-11-25 22:21:02 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 22:21:02 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:02 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:02 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:02 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:02 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:02 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:02 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:02 [DEBUG] - Completed 200 OK
+2023-11-25 22:21:27 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:21:27 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2023-11-25 22:21:27 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:21:27 [DEBUG] - Completed 200 OK
+2023-11-25 22:42:49 [INFO] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-25 22:42:49 [INFO] - Stopping service [Tomcat]
+2023-11-25 22:42:49 [INFO] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-25 22:42:49 [WARN] - The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-11-25 22:42:49 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:42:49 [INFO] - HikariPool-4 - Shutdown initiated...
+2023-11-25 22:42:49 [INFO] - HikariPool-4 - Shutdown completed.
+2023-11-25 22:42:49 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 22:42:49 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 22:42:49 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 22:42:50 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 22:42:50 [INFO] - Finished Spring Data repository scanning in 58 ms. Found 7 JPA repository interfaces.
+2023-11-25 22:42:50 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 22:42:50 [INFO] - Starting service [Tomcat]
+2023-11-25 22:42:50 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 22:42:50 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 22:42:50 [INFO] - Root WebApplicationContext: initialization completed in 669 ms
+2023-11-25 22:42:50 [INFO] - HikariPool-5 - Starting...
+2023-11-25 22:42:50 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 22:42:50 [INFO] - HikariPool-5 - Start completed.
+2023-11-25 22:42:50 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:42:50 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 22:42:50 [INFO] - Inside the service
+2023-11-25 22:42:51 [INFO] - Inside Customer controller
+2023-11-25 22:42:51 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 22:42:51 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 22:42:51 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 22:42:51 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7571d7a8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c4193cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ca6930d, org.springframework.security.web.header.HeaderWriterFilter@6c624a7b, org.springframework.security.web.authentication.logout.LogoutFilter@6dcf1dda, com.cabapp.pro.jwt.JwtRequestFilter@13d48e8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@768b438b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8c4eeb3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ed29b05, org.springframework.security.web.session.SessionManagementFilter@1a6ae753, org.springframework.security.web.access.ExceptionTranslationFilter@5767b416, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6685b9c0]
+2023-11-25 22:42:51 [INFO] - LiveReload server is running on port 35729
+2023-11-25 22:42:51 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 22:42:51 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 22:42:51 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 22:42:51 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 22:42:51 [INFO] - Context refreshed
+2023-11-25 22:42:51 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 22:42:51 [INFO] - Scanning for api listing references
+2023-11-25 22:42:51 [INFO] - Started CabBookingApplication in 1.673 seconds (JVM running for 29060.66)
+2023-11-25 22:42:51 [INFO] - Condition evaluation unchanged
+2023-11-25 22:44:05 [INFO] - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-11-25 22:44:05 [INFO] - Stopping service [Tomcat]
+2023-11-25 22:44:05 [WARN] - The web application [ROOT] appears to have started a thread named [HikariPool-5 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-11-25 22:44:05 [INFO] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:44:05 [INFO] - HikariPool-5 - Shutdown initiated...
+2023-11-25 22:44:05 [INFO] - HikariPool-5 - Shutdown completed.
+2023-11-25 22:44:05 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 8852 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-25 22:44:05 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-25 22:44:05 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-25 22:44:05 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-25 22:44:05 [INFO] - Finished Spring Data repository scanning in 44 ms. Found 7 JPA repository interfaces.
+2023-11-25 22:44:05 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-25 22:44:05 [INFO] - Starting service [Tomcat]
+2023-11-25 22:44:05 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-25 22:44:05 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-25 22:44:05 [INFO] - Root WebApplicationContext: initialization completed in 449 ms
+2023-11-25 22:44:05 [INFO] - HikariPool-6 - Starting...
+2023-11-25 22:44:05 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-25 22:44:05 [INFO] - HikariPool-6 - Start completed.
+2023-11-25 22:44:05 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-25 22:44:05 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-25 22:44:05 [INFO] - Inside the service
+2023-11-25 22:44:06 [INFO] - Inside Customer controller
+2023-11-25 22:44:06 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-25 22:44:06 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-25 22:44:06 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-25 22:44:06 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10c4d1cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1efa458d, org.springframework.security.web.context.SecurityContextPersistenceFilter@586d4257, org.springframework.security.web.header.HeaderWriterFilter@12039164, org.springframework.security.web.authentication.logout.LogoutFilter@70906fea, com.cabapp.pro.jwt.JwtRequestFilter@271aa00b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cfb7ce7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@627d48ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@120ccd0b, org.springframework.security.web.session.SessionManagementFilter@17b6e6d8, org.springframework.security.web.access.ExceptionTranslationFilter@6a9bc72a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@178b521a]
+2023-11-25 22:44:06 [INFO] - LiveReload server is running on port 35729
+2023-11-25 22:44:06 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-25 22:44:06 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-25 22:44:06 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-25 22:44:06 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-25 22:44:06 [INFO] - Context refreshed
+2023-11-25 22:44:06 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-25 22:44:06 [INFO] - Scanning for api listing references
+2023-11-25 22:44:06 [INFO] - Started CabBookingApplication in 1.257 seconds (JVM running for 29135.623)
+2023-11-25 22:44:06 [INFO] - Condition evaluation unchanged
+2023-11-25 22:44:09 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-25 22:44:09 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-25 22:44:09 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-25 22:44:09 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-25 22:44:09 [DEBUG] - Detected FixedThemeResolver
+2023-11-25 22:44:09 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6c871a60
+2023-11-25 22:44:09 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d3f861b
+2023-11-25 22:44:09 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-25 22:44:09 [INFO] - Completed initialization in 1 ms
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [DEBUG] - GET "/swagger-ui.html", parameters={}
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2023-11-25 22:44:09 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.css?v=2.9.2", parameters={masked}
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui.css?v=2.9.2", parameters={masked}
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-bundle.js?v=2.9.2", parameters={masked}
+2023-11-25 22:44:09 [DEBUG] - GET "/webjars/springfox-swagger-ui/swagger-ui-standalone-preset.js?v=2.9.2", parameters={masked}
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:09 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:09 [DEBUG] - GET "/webjars/springfox-swagger-ui/springfox.js?v=2.9.2", parameters={masked}
+2023-11-25 22:44:09 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:09 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:09 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:09 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:09 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/swagger-resources/configuration/ui", parameters={}
+2023-11-25 22:44:10 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#uiConfiguration()
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/favicon-32x32.png?v=2.9.2", parameters={masked}
+2023-11-25 22:44:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:10 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:44:10 [DEBUG] - Writing [springfox.documentation.swagger.web.UiConfiguration@5d0019d5]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/swagger-resources/configuration/security", parameters={}
+2023-11-25 22:44:10 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#securityConfiguration()
+2023-11-25 22:44:10 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:44:10 [DEBUG] - Writing [springfox.documentation.swagger.web.SecurityConfiguration@5c3b6f83]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/swagger-resources", parameters={}
+2023-11-25 22:44:10 [DEBUG] - Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-11-25 22:44:10 [DEBUG] - Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:44:10 [DEBUG] - Writing [[springfox.documentation.swagger.web.SwaggerResource@5c0f85fb]]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/v2/api-docs", parameters={}
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-700.woff2", parameters={}
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [DEBUG] - Using 'application/json', given [application/json, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:44:10 [DEBUG] - Writing [springfox.documentation.spring.web.json.Json@4867d766]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-700.woff2", parameters={}
+2023-11-25 22:44:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-300.woff2", parameters={}
+2023-11-25 22:44:10 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/open-sans-v15-latin-regular.woff2", parameters={}
+2023-11-25 22:44:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:10 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:10 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:18 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:18 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/source-code-pro-v7-latin-600.woff2", parameters={}
+2023-11-25 22:44:18 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:18 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:18 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:18 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-regular.woff2", parameters={}
+2023-11-25 22:44:18 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:18 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:37 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:37 [DEBUG] - GET "/admin/newreq/Pending", parameters={}
+2023-11-25 22:44:37 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 22:44:37 [INFO] - recieved request for registration  
+2023-11-25 22:44:37 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:44:37 [DEBUG] - Writing [[]]
+2023-11-25 22:44:37 [DEBUG] - Completed 200 OK
+2023-11-25 22:44:38 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:44:38 [DEBUG] - GET "/webjars/springfox-swagger-ui/fonts/titillium-web-v6-latin-600.woff2", parameters={}
+2023-11-25 22:44:38 [DEBUG] - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2023-11-25 22:44:38 [DEBUG] - Completed 200 OK
+2023-11-25 22:46:21 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:46:21 [DEBUG] - POST "/driver/register", parameters={}
+2023-11-25 22:46:21 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-25 22:46:21 [DEBUG] - Read "application/json;charset=UTF-8" to [DriverRequestSubmitDTO [username=soori, password=soori@54, address=rfdf-erfef, mobileNumber=43567895 (truncated)...]
+2023-11-25 22:46:21 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:46:21 [DEBUG] - Writing [DriverBasicResponseDTO [username=soori, password=soori@54, mobileNumber=4356789544, address=rfdf-erf (truncated)...]
+2023-11-25 22:46:21 [DEBUG] - Completed 200 OK
+2023-11-25 22:46:37 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:46:37 [DEBUG] - GET "/admin/newreq/Pending", parameters={}
+2023-11-25 22:46:37 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 22:46:37 [INFO] - recieved request for registration  
+2023-11-25 22:46:37 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:46:37 [DEBUG] - Writing [[DriverBasicResponseDTO [username=soori, password=soori@54, mobileNumber=4356789544, address=rfdf-er (truncated)...]
+2023-11-25 22:46:37 [DEBUG] - Completed 200 OK
+2023-11-25 22:46:40 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:46:40 [DEBUG] - GET "/admin/newreq/Pending", parameters={}
+2023-11-25 22:46:40 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-25 22:46:40 [INFO] - recieved request for registration  
+2023-11-25 22:46:40 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:46:40 [DEBUG] - Writing [[DriverBasicResponseDTO [username=soori, password=soori@54, mobileNumber=4356789544, address=rfdf-er (truncated)...]
+2023-11-25 22:46:40 [DEBUG] - Completed 200 OK
+2023-11-25 22:49:13 [WARN] - JWT Token does not begin with Bearer String
+2023-11-25 22:49:13 [DEBUG] - GET "/admin/activecabs/countby/Bangalore", parameters={}
+2023-11-25 22:49:13 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getActiveCabCountBycurrentLocation(String)
+2023-11-25 22:49:13 [INFO] - Received request to get cab count by current location: Bangalore
+2023-11-25 22:49:13 [DEBUG] - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-25 22:49:13 [DEBUG] - Writing [1]
+2023-11-25 22:49:13 [DEBUG] - Completed 200 OK

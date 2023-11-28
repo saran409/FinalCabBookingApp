@@ -1,0 +1,280 @@
+2023-11-27 11:47:03 [INFO] - Starting CabBookingApplication using Java 17.0.7 on LIN-JR6W6G3 with PID 14060 (C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication\target\classes started by skirthic in C:\Users\SKIRTHIC\Downloads\SAnow\SAnow\CabBookingApplication)
+2023-11-27 11:47:03 [DEBUG] - Running with Spring Boot v2.7.17, Spring v5.3.30
+2023-11-27 11:47:03 [INFO] - No active profile set, falling back to 1 default profile: "default"
+2023-11-27 11:47:03 [INFO] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-11-27 11:47:03 [INFO] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-11-27 11:47:04 [INFO] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-27 11:47:04 [INFO] - Finished Spring Data repository scanning in 138 ms. Found 7 JPA repository interfaces.
+2023-11-27 11:47:05 [INFO] - Tomcat initialized with port(s): 6754 (http)
+2023-11-27 11:47:05 [INFO] - Starting service [Tomcat]
+2023-11-27 11:47:05 [INFO] - Starting Servlet engine: [Apache Tomcat/9.0.82]
+2023-11-27 11:47:06 [INFO] - Initializing Spring embedded WebApplicationContext
+2023-11-27 11:47:06 [INFO] - Root WebApplicationContext: initialization completed in 2944 ms
+2023-11-27 11:47:06 [INFO] - HikariPool-1 - Starting...
+2023-11-27 11:47:06 [WARN] - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-11-27 11:47:07 [INFO] - HikariPool-1 - Start completed.
+2023-11-27 11:47:08 [INFO] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-27 11:47:09 [DEBUG] - Filter 'jwtRequestFilter' configured for use
+2023-11-27 11:47:09 [INFO] - Inside the service
+2023-11-27 11:47:09 [INFO] - Inside Customer controller
+2023-11-27 11:47:09 [WARN] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-27 11:47:10 [DEBUG] - 57 mappings in 'requestMappingHandlerMapping'
+2023-11-27 11:47:10 [INFO] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-11-27 11:47:10 [INFO] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@9b256dd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26aa320b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6535885e, org.springframework.security.web.header.HeaderWriterFilter@310ad594, org.springframework.security.web.authentication.logout.LogoutFilter@113827ba, com.cabapp.pro.jwt.JwtRequestFilter@7f1ef62c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51bcb884, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3cd95337, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e3f2235, org.springframework.security.web.session.SessionManagementFilter@3a4f6e04, org.springframework.security.web.access.ExceptionTranslationFilter@10c6a03e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17c1dfa2]
+2023-11-27 11:47:10 [INFO] - LiveReload server is running on port 35729
+2023-11-27 11:47:10 [DEBUG] - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-11-27 11:47:10 [DEBUG] - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-11-27 11:47:10 [DEBUG] - ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-11-27 11:47:11 [INFO] - Tomcat started on port(s): 6754 (http) with context path ''
+2023-11-27 11:47:11 [INFO] - Context refreshed
+2023-11-27 11:47:11 [INFO] - Found 1 custom documentation plugin(s)
+2023-11-27 11:47:11 [INFO] - Scanning for api listing references
+2023-11-27 11:47:11 [INFO] - Started CabBookingApplication in 9.15 seconds (JVM running for 9.966)
+2023-11-27 11:59:34 [INFO] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-27 11:59:34 [INFO] - Initializing Servlet 'dispatcherServlet'
+2023-11-27 11:59:34 [DEBUG] - Detected StandardServletMultipartResolver
+2023-11-27 11:59:34 [DEBUG] - Detected AcceptHeaderLocaleResolver
+2023-11-27 11:59:34 [DEBUG] - Detected FixedThemeResolver
+2023-11-27 11:59:34 [DEBUG] - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4ff061d0
+2023-11-27 11:59:34 [DEBUG] - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6717608e
+2023-11-27 11:59:34 [DEBUG] - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-11-27 11:59:34 [INFO] - Completed initialization in 3 ms
+2023-11-27 11:59:34 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 11:59:34 [DEBUG] - OPTIONS "/driver/register", parameters={}
+2023-11-27 11:59:34 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-27 11:59:34 [DEBUG] - Completed 200 OK
+2023-11-27 11:59:34 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 11:59:34 [DEBUG] - POST "/driver/register", parameters={}
+2023-11-27 11:59:34 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-27 11:59:34 [DEBUG] - Read "application/json;charset=UTF-8" to [DriverRequestSubmitDTO [username=Ramamoorthy, password=Ramamoorthy@01, address=No.5, recsd-Neiveli,  (truncated)...]
+2023-11-27 11:59:34 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 11:59:34 [DEBUG] - Writing [DriverBasicResponseDTO [username=Ramamoorthy, password=Ramamoorthy@01, mobileNumber=6454647474, addr (truncated)...]
+2023-11-27 11:59:34 [DEBUG] - Completed 200 OK
+2023-11-27 12:02:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:02:54 [DEBUG] - OPTIONS "/jwt/authenticate", parameters={}
+2023-11-27 12:02:54 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-27 12:02:54 [DEBUG] - Completed 200 OK
+2023-11-27 12:02:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:02:54 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-27 12:02:54 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-27 12:02:54 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=sathya, password=sathya@31, role=null, email=, token=, isValid=false, isUsername= (truncated)...]
+2023-11-27 12:02:54 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:02:54 [DEBUG] - Writing [LoginDto [username=sathya, password=sathya@31, role=[customer], email=, token=eyJhbGciOiJIUzI1NiJ9.e (truncated)...]
+2023-11-27 12:02:54 [DEBUG] - Completed 200 OK
+2023-11-27 12:02:54 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:02:54 [DEBUG] - GET "/customer/customerbyName/sathya", parameters={}
+2023-11-27 12:02:54 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCustomerByName(String)
+2023-11-27 12:02:54 [DEBUG] - Inside getCustomerByName method
+2023-11-27 12:02:54 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:02:54 [DEBUG] - Writing [CustomerResponseDTO [username=sathya, password=sathya@31, address=No.5,tnagar-Coimbatore, mobileNumb (truncated)...]
+2023-11-27 12:02:54 [DEBUG] - Completed 200 OK
+2023-11-27 12:02:56 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:02:56 [DEBUG] - GET "/customer/tripDetails/4", parameters={}
+2023-11-27 12:02:56 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCurrentTripByUserId(int)
+2023-11-27 12:02:56 [DEBUG] - Inside getCurrentTripByUserId method for user ID: 4
+2023-11-27 12:02:56 [DEBUG] - Failed to complete request: java.lang.NullPointerException: Cannot invoke "com.cabapp.pro.entity.TripBooking.getTripBookingId()" because "tripBooking" is null
+2023-11-27 12:02:56 [ERROR] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.cabapp.pro.entity.TripBooking.getTripBookingId()" because "tripBooking" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "com.cabapp.pro.entity.TripBooking.getTripBookingId()" because "tripBooking" is null
+	at com.cabapp.pro.util.TripBookingDTOMapper.getTripBookingDTOFromTripBooking(TripBookingDTOMapper.java:34)
+	at com.cabapp.pro.controller.CustomerController.getCurrentTripByUserId(CustomerController.java:205)
+	at com.cabapp.pro.controller.CustomerController$$FastClassBySpringCGLIB$$66b4e247.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:123)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+	at com.cabapp.pro.controller.CustomerController$$EnhancerBySpringCGLIB$$1002ff26.getCurrentTripByUserId(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at com.cabapp.pro.jwt.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:72)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-11-27 12:02:56 [DEBUG] - "ERROR" dispatch for GET "/error", parameters={}
+2023-11-27 12:02:56 [DEBUG] - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-11-27 12:02:56 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:02:56 [DEBUG] - Writing [{timestamp=Mon Nov 27 12:02:56 IST 2023, status=500, error=Internal Server Error, trace=java.lang.Nu (truncated)...]
+2023-11-27 12:02:56 [DEBUG] - Exiting from "ERROR" dispatch, status 500
+2023-11-27 12:02:59 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:02:59 [DEBUG] - GET "/customer/allTrips/sathya", parameters={}
+2023-11-27 12:02:59 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getAllTripBooking(String)
+2023-11-27 12:02:59 [DEBUG] - Inside getAllTripBooking method for customer ID: sathya
+2023-11-27 12:02:59 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:02:59 [DEBUG] - Writing [[TripBookingEndTripCustomerResponseDTO [tripBookingId=8, customerId=4, fromLocation=Coimbatore, toLo (truncated)...]
+2023-11-27 12:02:59 [DEBUG] - Completed 200 OK
+2023-11-27 12:36:27 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:36:27 [DEBUG] - OPTIONS "/driver/register", parameters={}
+2023-11-27 12:36:27 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-27 12:36:27 [DEBUG] - Completed 200 OK
+2023-11-27 12:36:27 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:36:27 [DEBUG] - POST "/driver/register", parameters={}
+2023-11-27 12:36:27 [DEBUG] - Mapped to com.cabapp.pro.controller.DriverController#saveDriverInfo(DriverRequestSubmitDTO)
+2023-11-27 12:36:27 [DEBUG] - Read "application/json;charset=UTF-8" to [DriverRequestSubmitDTO [username=Ganesh, password=Ganesh@81, address=No.7-Tnagar-Mysore, mobileNumbe (truncated)...]
+2023-11-27 12:36:27 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:36:27 [DEBUG] - Writing [DriverBasicResponseDTO [username=Ganesh, password=Ganesh@81, mobileNumber=6454747489, address=No.7-T (truncated)...]
+2023-11-27 12:36:28 [DEBUG] - Completed 200 OK
+2023-11-27 12:38:04 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:04 [DEBUG] - OPTIONS "/customer/register/customer", parameters={}
+2023-11-27 12:38:04 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveCustomer(CustomerRequestSubmitDTO)
+2023-11-27 12:38:04 [DEBUG] - Completed 200 OK
+2023-11-27 12:38:04 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:04 [DEBUG] - POST "/customer/register/customer", parameters={}
+2023-11-27 12:38:04 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#saveCustomer(CustomerRequestSubmitDTO)
+2023-11-27 12:38:04 [DEBUG] - Read "application/json;charset=UTF-8" to [CustomerRequestSubmitDTO [username=Thinesh, password=Thinesh@71, address=No.7-Yyftf-Bangalore, mobil (truncated)...]
+2023-11-27 12:38:04 [DEBUG] - Inside saveCustomer method
+2023-11-27 12:38:04 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:38:04 [DEBUG] - Writing [CustomerResponseDTO [username=Thinesh, password=Thinesh@71, address=No.7-Yyftf-Bangalore, mobileNumb (truncated)...]
+2023-11-27 12:38:04 [DEBUG] - Completed 201 CREATED
+2023-11-27 12:38:39 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:39 [DEBUG] - OPTIONS "/jwt/authenticate", parameters={}
+2023-11-27 12:38:39 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-27 12:38:39 [DEBUG] - Completed 200 OK
+2023-11-27 12:38:39 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:39 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-27 12:38:39 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-27 12:38:39 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=Thinesh, password=Thinesh@71, role=null, email=, token=, isValid=false, isUsernam (truncated)...]
+2023-11-27 12:38:39 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:38:39 [DEBUG] - Writing [LoginDto [username=Thinesh, password=Thinesh@71, role=[customer], email=, token=eyJhbGciOiJIUzI1NiJ9 (truncated)...]
+2023-11-27 12:38:39 [DEBUG] - Completed 200 OK
+2023-11-27 12:38:39 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:39 [DEBUG] - GET "/customer/customerbyName/Thinesh", parameters={}
+2023-11-27 12:38:39 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getCustomerByName(String)
+2023-11-27 12:38:39 [DEBUG] - Inside getCustomerByName method
+2023-11-27 12:38:39 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:38:39 [DEBUG] - Writing [CustomerResponseDTO [username=Thinesh, password=Thinesh@71, address=No.7-Yyftf-Bangalore, mobileNumb (truncated)...]
+2023-11-27 12:38:39 [DEBUG] - Completed 200 OK
+2023-11-27 12:38:49 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:38:49 [DEBUG] - GET "/customer/allTrips/Thinesh", parameters={}
+2023-11-27 12:38:49 [DEBUG] - Mapped to com.cabapp.pro.controller.CustomerController#getAllTripBooking(String)
+2023-11-27 12:38:49 [DEBUG] - Inside getAllTripBooking method for customer ID: Thinesh
+2023-11-27 12:38:49 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:38:49 [DEBUG] - Writing [[]]
+2023-11-27 12:38:49 [DEBUG] - Completed 200 OK
+2023-11-27 12:39:37 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:39:37 [DEBUG] - POST "/jwt/authenticate", parameters={}
+2023-11-27 12:39:37 [DEBUG] - Mapped to com.cabapp.pro.controller.JwtController#authenticateToken(LoginDto)
+2023-11-27 12:39:37 [DEBUG] - Read "application/json;charset=UTF-8" to [LoginDto [username=suresh, password=23456er, role=null, email=, token=, isValid=false, isUsername=fa (truncated)...]
+2023-11-27 12:39:37 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:39:37 [DEBUG] - Writing [LoginDto [username=suresh, password=23456er, role=[admin], email=, token=eyJhbGciOiJIUzI1NiJ9.eyJzdW (truncated)...]
+2023-11-27 12:39:37 [DEBUG] - Completed 200 OK
+2023-11-27 12:40:42 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:40:42 [DEBUG] - OPTIONS "/admin/register/cab", parameters={}
+2023-11-27 12:40:42 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-27 12:40:42 [DEBUG] - Completed 200 OK
+2023-11-27 12:40:42 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:40:42 [DEBUG] - POST "/admin/register/cab", parameters={}
+2023-11-27 12:40:42 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#saveCab(CabRequestDTO)
+2023-11-27 12:40:42 [DEBUG] - Read "application/json;charset=UTF-8" to [CabRequestDTO [cabId=0, carType=Mahendra, perKmRate=16.0, currentLocation=Mysore, cabRegistrationNum (truncated)...]
+2023-11-27 12:40:42 [INFO] - recieved request to save cab 
+2023-11-27 12:40:42 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:40:42 [DEBUG] - Writing [CabResponseDTO [cabId=10, carType=Mahendra, perKmRate=16.0, status=unassigned, currentLocation=Mysor (truncated)...]
+2023-11-27 12:40:42 [DEBUG] - Completed 200 OK
+2023-11-27 12:41:01 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:41:01 [DEBUG] - GET "/admin/newreq/Pending", parameters={}
+2023-11-27 12:41:01 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#getNewRegisterationRequests(String)
+2023-11-27 12:41:01 [INFO] - recieved request for registration  
+2023-11-27 12:41:01 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:41:01 [DEBUG] - Writing [[DriverBasicResponseDTO [username=soori, password=soori@54, mobileNumber=4356789544, address=rfdf-er (truncated)...]
+2023-11-27 12:41:01 [DEBUG] - Completed 200 OK
+2023-11-27 12:41:13 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:41:13 [DEBUG] - OPTIONS "/admin/update/status/7", parameters={}
+2023-11-27 12:41:13 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-27 12:41:13 [DEBUG] - Completed 200 OK
+2023-11-27 12:41:13 [WARN] - JWT Token does not begin with Bearer String
+2023-11-27 12:41:13 [DEBUG] - PUT "/admin/update/status/7", parameters={}
+2023-11-27 12:41:13 [DEBUG] - Mapped to com.cabapp.pro.controller.AdminController#updateDriverRegisterationRequesr(int)
+2023-11-27 12:41:13 [INFO] - recieved request to update registration 
+2023-11-27 12:41:13 [DEBUG] - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-11-27 12:41:13 [DEBUG] - Writing [DriverResponseDTO [username=Ganesh, password=Ganesh@81, mobileNumber=6454747489, address=No.7-Tnagar (truncated)...]
+2023-11-27 12:41:13 [DEBUG] - Completed 200 OK
